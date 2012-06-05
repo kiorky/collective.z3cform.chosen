@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="collective.z3cform.chosen">
+
+  <!-- ' collective.z3cform.chosen' Zope 3 browser layer -->
+  <interface name="collective.z3cform.chosen-theme"
+      interface="collective.z3cform.chosen.interfaces.IThemeSpecific"
+      type="zope.publisher.interfaces.browser.IBrowserSkinType"
+    />
+  <interface  name="collective.z3cform.chosen" interface="collective.z3cform.chosen.interfaces.ILayer" />
+
+  <!-- Viewlets registration -->
+
+  <!-- Zope 3 browser views -->
+  <!--
+    <browser:page
+        layer="collective.z3cform.chosen.interfaces.ILayer"
+        for="collective.z3cform.chosen.interface.mycontent"
+        name="MyView"
+        class=".view.MyView"
+        allowed_interface=".view.IMyView"
+        permission="zope2.View"
+      />
+  -->
+
+  <!-- Zope 3 browser resources -->
+
+  <!-- Resource directory -->
+  <browser:resourceDirectory
+      name="collective.z3cform.chosen"
+      directory="resources"
+      layer="collective.z3cform.chosen.interfaces.ILayer"
+    />
+
+
+  <!-- vim:set ft=xml: -->
+</configure>

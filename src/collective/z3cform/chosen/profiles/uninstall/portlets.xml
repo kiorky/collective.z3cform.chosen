@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portlets
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    i18n:domain="collective.z3cform.chosen">
+<!--
+  <portlet
+      addview="collective.z3cform.chosen.browser.portlet.Portlet"
+      title = "collective.z3cform.chosen portlet"
+      title = "Add a collective.z3cform.chosen portlet"
+      remove="True"
+    />
+-->
+</portlets>

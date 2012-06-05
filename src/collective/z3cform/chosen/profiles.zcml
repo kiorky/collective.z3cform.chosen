@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="collective.z3cform.chosen">
+  <!-- Include direct package dependencies -->
+  <genericsetup:registerProfile
+      name="qi"
+      title="collective.z3cform Policy QI"
+      directory="profiles/qi"
+      description="Turn a Plone site into the collective.z3cform QIINFO site."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+    />
+  <genericsetup:registerProfile
+      name="default"
+      title="collective.z3cform.chosen"
+      directory="profiles/default"
+      description="Install the collective.z3cform.chosen addon on this plone site."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+    />
+  <genericsetup:registerProfile
+      title="collective.z3cform.chosen uninstall" 
+      name="uninstall"
+      description="Uninstall the collective.z3cform.chosen addon on tbis plone site."
+      directory="profiles/uninstall"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      />
+  <genericsetup:importStep
+      name="collective_z3cform_chosen setupVarious"
+      title="various setup for collective.z3cform.chosen "
+      description="description"
+      handler="collective.z3cform.chosen.setuphandlers.setupVarious">
+    <depends name="content"/>
+  </genericsetup:importStep>
+  <!-- migration steps -->
+  <genericsetup:importStep
+      name="collective_z3cform_chosen setupQi"
+      title="Quick Installer products dependencies setup for collective.z3cform.chosen"
+      description="description"
+      handler="collective.z3cform.chosen.setuphandlers.setupQi">
+    <depends name="content"/>
+  </genericsetup:importStep> 
+  <!-- -->
+  <utility factory=".app_config.HiddenProducts" name="collective.z3cform.hiddenproducts"/>
+  <utility factory=".app_config.HiddenProfiles" name="collective.z3cform.hiddenprofiles"/> 
+  <include package=".migrations"/>
+</configure> 

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<object name="portal_controlpanel"
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    i18n:domain="collective.z3cform.chosen"
+    purge="False">
+<!--
+    <configlet 
+        title="collective.z3cform.chosen Settings"
+        action_id="chosen"
+        appId="collective.z3cform.chosen"
+        category="Products"
+        condition_expr=""
+        url_expr="string:${portal_url}/@@collective.z3cform.chosen-settings"
+        icon_expr="string:${portal_url}/++resource++collective.z3cform.chosen/collective.z3cform.chosen_icon.png"
+        visible="True"
+        i18n:attributes="title">
+        <permission>Manage portal</permission>
+    </configlet>
+-->
+</object>
