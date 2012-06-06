@@ -34,9 +34,14 @@ def test_suite():
     """."""
     logger = logging.getLogger('collective.z3cform.chosen.tests')
     cwd = os.path.dirname(__file__)
+    pcwd = os.path.dirname(
+        os.path.dirname(__file__)
+    )
     files = []
     try:
         files = glob.glob(os.path.join(cwd, '*txt'))
+        files.extend(glob.glob(os.path.join(pcwd, '*txt')))
+        files = [f for f in files if not 'version.txt' in f]
     except Exception,e:
         logger.warn('No doctests for collective.z3cform.chosen')
     suite = unittest.TestSuite()

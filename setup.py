@@ -11,6 +11,7 @@ def read(*rnames):
 
 long_description = "\n\n".join(
     [read('README.rst'),
+     read('src', 'collective', 'z3cform', 'chosen', 'README.txt'),
      read('docs', 'INSTALL.rst'),
      read('docs', 'CHANGES.rst'),
     ]
@@ -33,7 +34,7 @@ setup(
     description='chosen widget for z3cform (both chosen & ajax version)',
     long_description=long_description,
     classifiers=classifiers,
-    keywords='',
+    keywords='chosen z3cform widget plone',
     author='kiorky',
     author_email='kiorky@cryptelium.net',
     url='http://pypi.python.org/pypi/%s' % name,
@@ -45,9 +46,12 @@ setup(
         'setuptools',
         'z3c.autoinclude',
         'Plone',
+        'demjson',
+        'ordereddict',
         'plone.app.upgrade',
         # with_ploneproduct_jschosen
         'collective.js.chosen',
+        'z3c.formwidget.query',
         # -*- Extra requirements: -*-
     ],
     extras_require = {

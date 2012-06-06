@@ -1,0 +1,40 @@
+<script type="text/javascript" tal:content="structure view/js"></script>
+<div tal:attributes="id string:${view/id}-chosen;class view/klass; ">
+  <select
+    tal:attributes="
+    data-placeholder view/placeholder;
+    disabled view/disabled;
+    id string:${view/id}-select;
+    multiple view/multiple;
+    name string:${view/name}:list;
+    onblur view/onblur;
+    onchange view/onchange;
+    onclick view/onclick;
+    ondblclick view/ondblclick;
+    onfocus view/onfocus;
+    onkeydown view/onkeydown;
+    onkeypress view/onkeypress;
+    onkeyup view/onkeyup;
+    onmousedown view/onmousedown;
+    onmousemove view/onmousemove;
+    onmouseout view/onmouseout;
+    onmouseover view/onmouseover;
+    onmouseup view/onmouseup;
+    onselect view/onselect;
+    readonly view/readonly;
+    style view/style;
+    tabindex view/tabindex;
+    "
+    >
+    <tal:block repeat="item view/items">
+      <option id="" value="" selected="selected"
+      tal:condition="item/selected"
+      tal:attributes="id item/id;value item/value"
+      tal:content="item/content">label</option>
+      <option id="" value=""
+      tal:condition="not:item/selected"
+      tal:attributes="id item/id;value item/value"
+      tal:content="item/content">label</option>
+    </tal:block>
+  </select>
+</div>

@@ -1,0 +1,23 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="collective.z3cform.chosen">
+
+  <include package="Products.CMFCore" />
+
+  <!-- Demo -->
+  <browser:page
+      for="*"
+      name="test-chosen-widgets"
+      class=".demo.TestView"
+      permission="cmf.ModifyPortalContent"
+    />
+  <browser:page
+      for="*"
+      name="test-chosen-widgets-contextless"
+      class=".demo.ContextLessTestView"
+      permission="cmf.ModifyPortalContent"
+    />
+  <adapter factory=".demo.TestAdapter" />
+
+</configure>

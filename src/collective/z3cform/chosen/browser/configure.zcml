@@ -2,9 +2,11 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:z3c="http://namespaces.zope.org/z3c"
     i18n_domain="collective.z3cform.chosen">
 
   <!-- ' collective.z3cform.chosen' Zope 3 browser layer -->
+  <include package="z3c.form" file="meta.zcml"/>
   <interface name="collective.z3cform.chosen-theme"
       interface="collective.z3cform.chosen.interfaces.IThemeSpecific"
       type="zope.publisher.interfaces.browser.IBrowserSkinType"
@@ -33,7 +35,5 @@
       directory="resources"
       layer="collective.z3cform.chosen.interfaces.ILayer"
     />
-
-
   <!-- vim:set ft=xml: -->
 </configure>

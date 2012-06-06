@@ -23,5 +23,12 @@
   <cmf:registerDirectory
        name="collective_z3cform_chosen_custom"/>
   -->
+  <browser:page
+      name="chosen-autocomplete-search"
+      for=".interfaces.IChosenWidget"
+      permission="zope.Public"
+      class=".widget.ChosenAutocompleteSearch"
+    /> 
+
 </configure>
 <!-- vim:set ft=xml: -->

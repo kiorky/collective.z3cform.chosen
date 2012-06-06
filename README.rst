@@ -24,5 +24,13 @@ Authors
 Contributors
 -----------------
 
+Description
+=============
+This package contains 4 widgets for z3cform using the `chosen <http://harvesthq.github.com/chosen/>` and `ajaxchosen <https://github.com/kiorky/ajax-chosen>`_ libraries.
 
- 
+ - A single valued widget for chosen
+ - A multi valued widget for chosen
+ - A single valued widget for ajaxchosen
+ - A multi valued widget for ajaxchosen
+
+
