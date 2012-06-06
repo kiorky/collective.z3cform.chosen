@@ -34,3 +34,6 @@ This package contains 4 widgets for z3cform using the `chosen <http://harvesthq.
  - A multi valued widget for ajaxchosen
 
 
+Repository : `github <https://github.com/kiorky/collective.z3cform.chosen>`_
+
+
