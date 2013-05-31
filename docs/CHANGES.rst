@@ -4,7 +4,8 @@ Changelog
 1.1 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Fix bug for no value in List fields.
+  [cedricmessiant]
 
 
 1.0 (2012-06-06)
