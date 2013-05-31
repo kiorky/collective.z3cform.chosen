@@ -104,8 +104,7 @@ class ChosenBase(select.SelectWidget, Explicit):
     onselect = ""
     readonly = False
     prompt = True
-    promptMessage = _('select a value or '
-                      'this for no value...')
+    promptMessage = _('Select a value here')
     noValueMessage = _('no value')
     noValueToken = _(u'(nothing)')
     no_results_text = _("No results found")

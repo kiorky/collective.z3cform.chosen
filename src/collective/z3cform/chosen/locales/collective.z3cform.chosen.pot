@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2010-04-15 23:45+0000\n"
+"POT-Creation-Date: 2013-05-31 09:47+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,4 +13,20 @@ msgstr ""
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
+
+#: ./widget.py:109
+msgid "(nothing)"
+msgstr ""
+
+#: ./widget.py:110
+msgid "No results found"
+msgstr ""
+
+#: ./widget.py:107
+msgid "Select a value here"
+msgstr ""
+
+#: ./widget.py:108
+msgid "no value"
+msgstr ""
 
