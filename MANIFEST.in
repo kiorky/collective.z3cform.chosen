@@ -1,0 +1,4 @@
+include *.rst *.cfg Makefile .*yml
+recursive-include src *
+recursive-include docs *
+global-exclude *.pyc .*.cfg

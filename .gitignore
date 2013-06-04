@@ -1,8 +1,11 @@
+minitage.*
 *.mo
+src.mrdeveloper/*
 tags
 tags.python
 plone.env
-.minitage
+t
+.minitage*
 *.egg-info
 *.egg
 *.EGG
@@ -19,8 +22,6 @@ dist
 .mr.developer.cfg
 .hg
 .bzr
-.project
-.pydevproject
 .svn
 *.pyc
 *.pyo
