@@ -2,7 +2,6 @@
 tags
 tags.python
 plone.env
-t
 .minitage
 *.egg-info
 *.egg
@@ -20,6 +19,8 @@ dist
 .mr.developer.cfg
 .hg
 .bzr
+.project
+.pydevproject
 .svn
 *.pyc
 *.pyo
