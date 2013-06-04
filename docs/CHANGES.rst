@@ -4,6 +4,8 @@ Changelog
 1.1 (unreleased)
 ----------------
 
+- buildout, tests & travis [kiorky]
+
 - Change prompt message and update French translations.
   Fix bug for no value in List fields.
   [cedricmessiant]
