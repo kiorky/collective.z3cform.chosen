@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.1 (unreleased)
+1.1 (2013-06-04)
 ----------------
 
 - buildout, tests & travis [kiorky]
