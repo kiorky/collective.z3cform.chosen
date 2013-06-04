@@ -4,6 +4,10 @@ Introduction
 
 .. contents::
 
+
+.. image:: https://secure.travis-ci.org/collective/collective.z3cform.chosen.png
+    :target: http://travis-ci.org/collective/collective.z3cform.chosen
+
 Credits
 ========
 Companies
